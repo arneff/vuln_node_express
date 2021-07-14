@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Wait for Host
-        uses: smurfpandey/wait-for-it@master
+        uses: smurfpandey/wait-for-it@v1.0
         with:
           host: localhost
           port: 3000
