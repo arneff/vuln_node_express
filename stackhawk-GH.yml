@@ -1,0 +1,4 @@
+app:
+  applicationId: 832d949a-8c02-48c4-88fc-a5f2d9356d9e
+  env: Github_Actions
+  host: http://localhost:3000
