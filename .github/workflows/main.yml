@@ -29,10 +29,17 @@ jobs:
       - name: Build and run Vuln_node_express
         run: docker-compose up --build --detach
 
-      # Runs a set of commands using the runners shell
+      # Wait for app to be available
       - name: Wait for Host
         uses: smurfpandey/wait-for-it@v1.0
         with:
           host: localhost
           port: 3000
           timeout: 10
+      
+      # Run StackHawk
+      - name: Run StackHawk
+        uses: stackhawk/hawkscan-action@v1.3.0
+        with:
+          apiKey: ${{ secrets.HAWK_API_KEY }}
+          dryRun: true
