@@ -4,8 +4,8 @@ app:
   host: ${APP_HOST:http://localhost:3000}
 hawk:
   failureThreshold: high
-hawkAddon:
+hawkAddOn:
   scripts:
     - name: stackhawk.kt
       type: httpsender
-      path: /hawk
+      path: /hawk/
