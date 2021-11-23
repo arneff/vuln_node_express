@@ -1,0 +1,5 @@
+steps:
+- name: 'ubuntu'
+  id: A
+  args: ['scripts/build-and-run.sh']
+  
